@@ -12,6 +12,6 @@ Python 3.6
 
 Pytorch 1.0.1
 
-Common packages (pandas, numpy, skleanr)
+Common packages (pandas, numpy, sklearn)
 
 
