@@ -12,6 +12,6 @@ Python 3.6
 
 Pytorch 1.0.1
 
-Common packages (pandas, numpy, sklearn)
+Common packages (pandas, numpy, sklearn, os, matploblib, smtplib, os, sys, time, PIL)
 
 
