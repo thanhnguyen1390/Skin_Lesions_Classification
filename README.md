@@ -18,9 +18,13 @@ Common Python packages (pandas, numpy, sklearn, os, matploblib, smtplib, os, sys
 
 ### Download dataset
 
-The dataset is not committed with the repository due to its size (~ 3 GB). URL: https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+The dataset is not committed with the repository due to its size (~ 3 GB). 
 
-Downloading the dataset to a linux machine can be done by utilizing Kaggle API. More information about the API can be found at https://github.com/Kaggle/kaggle-api
+URL: https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+
+Kaggle API is a good tool for downloading kaggle datasets to a linux environment. 
+
+More information about the API can be found at https://github.com/Kaggle/kaggle-api
 
 
 
