@@ -7,5 +7,6 @@ The objective of this project is to build a model to classify different skin les
 
 ### Prerequisites
 Python 3.6
+
 Pytorch 1.0.1
 
