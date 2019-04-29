@@ -1,0 +1,221 @@
+AlexNet(
+  (features): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace)
+    (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): ReLU(inplace)
+    (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (11): ReLU(inplace)
+    (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Dropout(p=0.5)
+    (1): Linear(in_features=9216, out_features=4096, bias=True)
+    (2): ReLU(inplace)
+    (3): Dropout(p=0.5)
+    (4): Linear(in_features=4096, out_features=4096, bias=True)
+    (5): ReLU(inplace)
+    (6): Linear(in_features=4096, out_features=7, bias=True)
+  )
+)
+Start Training AlexNet
+Training loss at epoch 1 of 20, step 100 of 802: 0.4028
+Training loss at epoch 1 of 20, step 200 of 802: 0.7240
+Training loss at epoch 1 of 20, step 300 of 802: 0.9689
+Training loss at epoch 1 of 20, step 400 of 802: 0.3424
+Training loss at epoch 1 of 20, step 500 of 802: 0.6906
+Training loss at epoch 1 of 20, step 600 of 802: 0.9017
+Training loss at epoch 1 of 20, step 700 of 802: 0.5396
+Training loss at epoch 1 of 20, step 800 of 802: 1.0875
+Accuracy of network on test set at epoch 1 of 20: 1515/2003 = 75.64%
+Training loss at epoch 2 of 20, step 100 of 802: 0.6895
+Training loss at epoch 2 of 20, step 200 of 802: 0.3951
+Training loss at epoch 2 of 20, step 300 of 802: 1.2518
+Training loss at epoch 2 of 20, step 400 of 802: 0.2720
+Training loss at epoch 2 of 20, step 500 of 802: 0.7120
+Training loss at epoch 2 of 20, step 600 of 802: 0.6075
+Training loss at epoch 2 of 20, step 700 of 802: 0.5309
+Training loss at epoch 2 of 20, step 800 of 802: 0.5281
+Accuracy of network on test set at epoch 2 of 20: 1550/2003 = 77.38%
+Training loss at epoch 3 of 20, step 100 of 802: 0.4329
+Training loss at epoch 3 of 20, step 200 of 802: 0.6171
+Training loss at epoch 3 of 20, step 300 of 802: 0.2152
+Training loss at epoch 3 of 20, step 400 of 802: 0.9790
+Training loss at epoch 3 of 20, step 500 of 802: 0.5994
+Training loss at epoch 3 of 20, step 600 of 802: 0.6365
+Training loss at epoch 3 of 20, step 700 of 802: 0.3548
+Training loss at epoch 3 of 20, step 800 of 802: 0.4210
+Accuracy of network on test set at epoch 3 of 20: 1559/2003 = 77.83%
+Training loss at epoch 4 of 20, step 100 of 802: 0.4885
+Training loss at epoch 4 of 20, step 200 of 802: 0.1346
+Training loss at epoch 4 of 20, step 300 of 802: 0.8754
+Training loss at epoch 4 of 20, step 400 of 802: 1.0769
+Training loss at epoch 4 of 20, step 500 of 802: 0.3536
+Training loss at epoch 4 of 20, step 600 of 802: 0.7765
+Training loss at epoch 4 of 20, step 700 of 802: 1.0800
+Training loss at epoch 4 of 20, step 800 of 802: 0.2435
+Accuracy of network on test set at epoch 4 of 20: 1564/2003 = 78.08%
+Training loss at epoch 5 of 20, step 100 of 802: 0.7606
+Training loss at epoch 5 of 20, step 200 of 802: 0.2910
+Training loss at epoch 5 of 20, step 300 of 802: 0.1166
+Training loss at epoch 5 of 20, step 400 of 802: 0.7001
+Training loss at epoch 5 of 20, step 500 of 802: 0.3469
+Training loss at epoch 5 of 20, step 600 of 802: 0.4416
+Training loss at epoch 5 of 20, step 700 of 802: 1.0317
+Training loss at epoch 5 of 20, step 800 of 802: 1.3712
+Accuracy of network on test set at epoch 5 of 20: 1576/2003 = 78.68%
+Training loss at epoch 6 of 20, step 100 of 802: 0.2721
+Training loss at epoch 6 of 20, step 200 of 802: 0.4864
+Training loss at epoch 6 of 20, step 300 of 802: 0.2181
+Training loss at epoch 6 of 20, step 400 of 802: 0.5093
+Training loss at epoch 6 of 20, step 500 of 802: 0.2495
+Training loss at epoch 6 of 20, step 600 of 802: 0.1255
+Training loss at epoch 6 of 20, step 700 of 802: 0.5616
+Training loss at epoch 6 of 20, step 800 of 802: 0.4666
+Accuracy of network on test set at epoch 6 of 20: 1624/2003 = 81.08%
+Training loss at epoch 7 of 20, step 100 of 802: 0.3347
+Training loss at epoch 7 of 20, step 200 of 802: 0.3503
+Training loss at epoch 7 of 20, step 300 of 802: 0.1634
+Training loss at epoch 7 of 20, step 400 of 802: 0.2479
+Training loss at epoch 7 of 20, step 500 of 802: 0.1550
+Training loss at epoch 7 of 20, step 600 of 802: 0.7592
+Training loss at epoch 7 of 20, step 700 of 802: 0.1191
+Training loss at epoch 7 of 20, step 800 of 802: 0.2367
+Accuracy of network on test set at epoch 7 of 20: 1630/2003 = 81.38%
+Training loss at epoch 8 of 20, step 100 of 802: 0.7004
+Training loss at epoch 8 of 20, step 200 of 802: 0.0503
+Training loss at epoch 8 of 20, step 300 of 802: 0.1294
+Training loss at epoch 8 of 20, step 400 of 802: 0.3030
+Training loss at epoch 8 of 20, step 500 of 802: 0.0353
+Training loss at epoch 8 of 20, step 600 of 802: 0.1117
+Training loss at epoch 8 of 20, step 700 of 802: 0.1174
+Training loss at epoch 8 of 20, step 800 of 802: 0.0874
+Accuracy of network on test set at epoch 8 of 20: 1630/2003 = 81.38%
+Training loss at epoch 9 of 20, step 100 of 802: 0.3203
+Training loss at epoch 9 of 20, step 200 of 802: 0.4497
+Training loss at epoch 9 of 20, step 300 of 802: 0.1204
+Training loss at epoch 9 of 20, step 400 of 802: 0.4382
+Training loss at epoch 9 of 20, step 500 of 802: 0.0725
+Training loss at epoch 9 of 20, step 600 of 802: 0.2641
+Training loss at epoch 9 of 20, step 700 of 802: 0.1616
+Training loss at epoch 9 of 20, step 800 of 802: 0.5784
+Accuracy of network on test set at epoch 9 of 20: 1646/2003 = 82.18%
+Training loss at epoch 10 of 20, step 100 of 802: 0.0577
+Training loss at epoch 10 of 20, step 200 of 802: 0.5496
+Training loss at epoch 10 of 20, step 300 of 802: 0.1030
+Training loss at epoch 10 of 20, step 400 of 802: 0.7876
+Training loss at epoch 10 of 20, step 500 of 802: 0.2186
+Training loss at epoch 10 of 20, step 600 of 802: 0.2106
+Training loss at epoch 10 of 20, step 700 of 802: 0.1640
+Training loss at epoch 10 of 20, step 800 of 802: 0.6899
+Accuracy of network on test set at epoch 10 of 20: 1644/2003 = 82.08%
+Training loss at epoch 11 of 20, step 100 of 802: 0.3713
+Training loss at epoch 11 of 20, step 200 of 802: 0.2666
+Training loss at epoch 11 of 20, step 300 of 802: 0.2124
+Training loss at epoch 11 of 20, step 400 of 802: 0.1903
+Training loss at epoch 11 of 20, step 500 of 802: 0.3348
+Training loss at epoch 11 of 20, step 600 of 802: 0.1156
+Training loss at epoch 11 of 20, step 700 of 802: 0.2293
+Training loss at epoch 11 of 20, step 800 of 802: 0.0252
+Accuracy of network on test set at epoch 11 of 20: 1641/2003 = 81.93%
+Training loss at epoch 12 of 20, step 100 of 802: 0.3922
+Training loss at epoch 12 of 20, step 200 of 802: 0.4042
+Training loss at epoch 12 of 20, step 300 of 802: 0.2165
+Training loss at epoch 12 of 20, step 400 of 802: 0.1475
+Training loss at epoch 12 of 20, step 500 of 802: 0.1427
+Training loss at epoch 12 of 20, step 600 of 802: 0.3049
+Training loss at epoch 12 of 20, step 700 of 802: 0.2035
+Training loss at epoch 12 of 20, step 800 of 802: 0.1312
+Accuracy of network on test set at epoch 12 of 20: 1642/2003 = 81.98%
+Training loss at epoch 13 of 20, step 100 of 802: 0.6528
+Training loss at epoch 13 of 20, step 200 of 802: 0.0256
+Training loss at epoch 13 of 20, step 300 of 802: 0.4694
+Training loss at epoch 13 of 20, step 400 of 802: 0.4734
+Training loss at epoch 13 of 20, step 500 of 802: 0.1604
+Training loss at epoch 13 of 20, step 600 of 802: 0.3213
+Training loss at epoch 13 of 20, step 700 of 802: 0.1283
+Training loss at epoch 13 of 20, step 800 of 802: 0.2648
+Accuracy of network on test set at epoch 13 of 20: 1644/2003 = 82.08%
+Training loss at epoch 14 of 20, step 100 of 802: 0.2301
+Training loss at epoch 14 of 20, step 200 of 802: 0.7895
+Training loss at epoch 14 of 20, step 300 of 802: 0.0733
+Training loss at epoch 14 of 20, step 400 of 802: 0.7255
+Training loss at epoch 14 of 20, step 500 of 802: 0.1922
+Training loss at epoch 14 of 20, step 600 of 802: 0.0932
+Training loss at epoch 14 of 20, step 700 of 802: 0.5581
+Training loss at epoch 14 of 20, step 800 of 802: 0.4836
+Accuracy of network on test set at epoch 14 of 20: 1645/2003 = 82.13%
+Training loss at epoch 15 of 20, step 100 of 802: 0.3756
+Training loss at epoch 15 of 20, step 200 of 802: 0.2623
+Training loss at epoch 15 of 20, step 300 of 802: 0.1269
+Training loss at epoch 15 of 20, step 400 of 802: 0.2242
+Training loss at epoch 15 of 20, step 500 of 802: 0.3866
+Training loss at epoch 15 of 20, step 600 of 802: 0.0391
+Training loss at epoch 15 of 20, step 700 of 802: 0.2582
+Training loss at epoch 15 of 20, step 800 of 802: 0.4333
+Accuracy of network on test set at epoch 15 of 20: 1646/2003 = 82.18%
+Training loss at epoch 16 of 20, step 100 of 802: 0.3706
+Training loss at epoch 16 of 20, step 200 of 802: 0.1605
+Training loss at epoch 16 of 20, step 300 of 802: 0.1978
+Training loss at epoch 16 of 20, step 400 of 802: 0.1279
+Training loss at epoch 16 of 20, step 500 of 802: 0.2898
+Training loss at epoch 16 of 20, step 600 of 802: 0.1675
+Training loss at epoch 16 of 20, step 700 of 802: 0.1293
+Training loss at epoch 16 of 20, step 800 of 802: 0.0741
+Accuracy of network on test set at epoch 16 of 20: 1646/2003 = 82.18%
+Training loss at epoch 17 of 20, step 100 of 802: 0.2862
+Training loss at epoch 17 of 20, step 200 of 802: 0.3065
+Training loss at epoch 17 of 20, step 300 of 802: 0.2025
+Training loss at epoch 17 of 20, step 400 of 802: 0.8295
+Training loss at epoch 17 of 20, step 500 of 802: 0.0826
+Training loss at epoch 17 of 20, step 600 of 802: 0.3524
+Training loss at epoch 17 of 20, step 700 of 802: 0.4414
+Training loss at epoch 17 of 20, step 800 of 802: 0.3097
+Accuracy of network on test set at epoch 17 of 20: 1647/2003 = 82.23%
+Training loss at epoch 18 of 20, step 100 of 802: 0.2099
+Training loss at epoch 18 of 20, step 200 of 802: 0.5246
+Training loss at epoch 18 of 20, step 300 of 802: 0.3093
+Training loss at epoch 18 of 20, step 400 of 802: 0.7054
+Training loss at epoch 18 of 20, step 500 of 802: 0.4914
+Training loss at epoch 18 of 20, step 600 of 802: 0.4424
+Training loss at epoch 18 of 20, step 700 of 802: 0.1269
+Training loss at epoch 18 of 20, step 800 of 802: 0.1207
+Accuracy of network on test set at epoch 18 of 20: 1645/2003 = 82.13%
+Training loss at epoch 19 of 20, step 100 of 802: 0.3821
+Training loss at epoch 19 of 20, step 200 of 802: 0.1364
+Training loss at epoch 19 of 20, step 300 of 802: 0.2367
+Training loss at epoch 19 of 20, step 400 of 802: 0.2241
+Training loss at epoch 19 of 20, step 500 of 802: 0.1015
+Training loss at epoch 19 of 20, step 600 of 802: 0.1854
+Training loss at epoch 19 of 20, step 700 of 802: 0.2497
+Training loss at epoch 19 of 20, step 800 of 802: 0.1047
+Accuracy of network on test set at epoch 19 of 20: 1644/2003 = 82.08%
+Training loss at epoch 20 of 20, step 100 of 802: 0.7769
+Training loss at epoch 20 of 20, step 200 of 802: 0.7757
+Training loss at epoch 20 of 20, step 300 of 802: 0.4926
+Training loss at epoch 20 of 20, step 400 of 802: 0.1253
+Training loss at epoch 20 of 20, step 500 of 802: 0.0475
+Training loss at epoch 20 of 20, step 600 of 802: 0.1227
+Training loss at epoch 20 of 20, step 700 of 802: 0.2510
+Training loss at epoch 20 of 20, step 800 of 802: 0.2284
+Accuracy of network on test set at epoch 20 of 20: 1643/2003 = 82.03%
+Training time: 2570.0 seconds.
+Training loss plot saved.
+Testing Accuracy plot saved.
+Accuracy rate: 82.03%
+Misclassifcation rate: 17.97%
+[[  33    9    7    3    8    5    0]
+ [  11   73    6    1    8    4    0]
+ [   8    7  136    1   52   16    0]
+ [   0    2    3    7    9    2    0]
+ [  11   15   20    3 1249   40    3]
+ [   7    4   14    4   70  123    1]
+ [   0    2    0    0    4    0   22]]
+Confusion matrix plot saved.
+End Training AlexNet
