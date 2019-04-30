@@ -3,7 +3,7 @@ $(document).ready(function () {
   Chart.defaults.scale.gridLines.display = false;
 
   //Load CSV
-  d3.csv("../data/HAM10000_metadata_cleaned.csv", function (d) {
+  d3.csv("../../data/HAM10000_metadata_cleaned.csv", function (d) {
     return {
       age: +d.age,
       sex: d.sex,
