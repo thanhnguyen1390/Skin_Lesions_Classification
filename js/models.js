@@ -36,24 +36,53 @@ $(document).ready(function () {
         title: {
           display: false
         },
-        scales: {xAxes: [{
-          ticks: {
-            callback: function (value) {
-              return decamelize(value)
+        scales: {
+          xAxes: [{
+            ticks: {
+              callback: function (value) {
+                return decamelize(value)
+              }
             }
-          }
-        }],
-    
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]}
+          }],
+
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
       }
     });
   });
 
+  // //Load confusion matrix
+  // d3.csv('../models/alexnet/test_result.csv').then(function (data) {
+  //   // let confusion_matrix = calculate_confusion_matrix(data)
+  //   let confusion_matrix = [[10, 189],[98,129]]
+  //   labels = ['Actinic keratoses', 'Basal call carcinoma', 'Benign keratosis-like lesions', 'Dermatofibroma', 'Melanocytic nevi', 'Melanoma', 'Vascular lesions']
+  //   Matrix({
+  //     container: '#alexNetCM',
+  //     data: confusion_matrix,
+  //     labels: labels,
+  //     start_color : '#ffffff',
+  //     end_color : '#e67e22'
+  //   })
+  // })
+
 });
+
+function calculate_confusion_matrix(data) {
+  let confusion_matrix = zeros(7, 7, 0)
+  _.each(data, (row) => {
+    confusion_matrix[row.Actual][row.Predicted] += 1
+  })
+
+  return confusion_matrix
+}
+
+function zeros(w, h) {
+  return Array.from(new Array(h), _ => Array(w).fill(0))
+}
 
 function decamelize(str) {
   var words = str.match(/[A-Za-z][a-z]*/g);
@@ -67,7 +96,7 @@ function capitalize(word) {
 function sort(obj) {
   let arr = []
 
-  _.mapObject(obj, function(val, key) {
+  _.mapObject(obj, function (val, key) {
     arr.push({
       label: key,
       value: val

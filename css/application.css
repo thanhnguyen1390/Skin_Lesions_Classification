@@ -46,3 +46,7 @@ a.nav-item.active {
   border: solid 1px #9e768f;
   color: #9e768f
 }
+
+td {
+  text-align: center
+}
