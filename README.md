@@ -1,6 +1,6 @@
 # Skin Lesions Classification
 
-Thanh Nguyen
+Author: Thanh Nguyen
 
 ## Introduction
 
@@ -25,6 +25,14 @@ URL: https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
 Kaggle API is a good tool for downloading kaggle datasets to a linux environment. 
 
 More information about the API can be found at https://github.com/Kaggle/kaggle-api
+
+Extract the zipped files, all csv files go to data directory and images go to data/images directory.
+
+### Run py code
+
+Make sure all neccessary packages are installed before running py codes.
+
+
 
 
 
