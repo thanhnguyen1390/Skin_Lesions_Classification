@@ -1,0 +1,12 @@
+{
+  "name": "Skin-Cancer-Classification",
+  "version": "1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "machinelearn": "^2.1.0",
+    "webpack": "^4.30.0"
+  },
+  "author": "Thanh Nguyen",
+  "license": "MIT"
+}

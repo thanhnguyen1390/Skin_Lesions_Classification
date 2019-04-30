@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skin Lesion Classification</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/application.css" />
+</head>
+
+<body>
+  <div class="jumpotron cover-page h-50 px-2">
+    <nav class="navbar navbar-expand-sm navbar-inverse">
+      <div class="navbar-collapse collapse">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html"><span><img
+                src="./img/icons8-home-page-48.png"></span></a>
+
+        </div>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="introduction.html">Introduction</a>
+          <a class="nav-item nav-link" href="analysis.html">Analysis</a>
+          <a class="nav-item nav-link active" href="models.html">Models</a>
+          <a class="nav-item nav-link" href="https://github.com/thanhnguyen1390/Skin_Lesions_Classification"><span><img
+                src="./img/github_icon.png"></span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="container h-75">
+      <div class="row h-100 justify-content-center align-items-center text-center">
+        <h1>Automate Skin Lesion Classification Using Deep Neural Network</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-justify py-5">
+    <div class="row">
+      <div class="col-8 offset-1 pr-5">
+        <h1 class="text-muted">Skin Lesion Distribution</h1>
+        <p>The dataset has imbalanced classes with more than 60% of the cases are melanocytic nevi while vascular
+          lesions and dermatofibroma are on the lower end with less than 2% of the cases, and other types are also
+          less than melanocytic nevi. Imbalanced classes are not ideal in modeling as they may cause biases in
+          predicting ability of the model toward the major classes and also create problem in preparing samples for
+          train and test sets to include representative across all classes</p>
+        <canvas class="col-8 mt-5" style="height:400px" id="cellTypeChart"></canvas>
+        <h1 class="text-muted">Training</h1>
+        <p>Stratified sampling is used to prepare train and test sets (80% and 20%) so that every class is present in the sets and
+          follows the sample distribution. Class weights are introduced into the models to make them more sensitive
+          toword Melanoma as well as to reduce the possibility of overfitting of melanocytic nevi. The models are
+          trained using Pytorch pretrained models, AlexNet and ResNet18</p>
+        <h1 class="text-muted">Key Findings</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Training Time (mins)</th>
+              <th scope="col">Accuracy (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AlexNet</th>
+              <td>43</td>
+              <td>82</td>
+            </tr>
+            <tr>
+              <th scope="row">AlexNet with weights</th>
+              <td>43</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <th scope="row">ResNet18</th>
+              <td>43</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <th scope="row">ResNet18 with weight</th>
+              <td>42</td>
+              <td>73</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-2">
+        <h5 class="text-muted">KEYWORDS</h5>
+        <div>
+          <span class="badge keyword my-1">Skin Cancer</span>
+          <span class="badge keyword my-1">Skin Lesion</span>
+          <span class="badge keyword my-1">Automation</span>
+          <span class="badge keyword my-1">Machine Learning</span>
+          <span class="badge keyword my-1">Deep Learning</span>
+          <span class="badge keyword my-1">CNN</span>
+          <span class="badge keyword my-1">Convolutional Neural Network</span>
+          <span class="badge keyword my-1">ResNet</span>
+          <span class="badge keyword my-1">AlexNet</span>
+        </div>
+        <hr>
+        <h5 class="text-muted">ABOUT ME</h5>
+        <img src="./img/IMG_0704.JPG" width="100%">
+        <p class="text-muted">I am a software consultant and have experiences in data analysis, market research and web
+          development. My interests include data mining, data modeling, computer algorithms and web development. In
+          my spare time, I enjoys biking, travel, trying out new food and spending time with my dogs, Ahri and Gato</p>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- JS -->
+  <script src="./js/jquery-3.4.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/underscore.min.js"></script>
+  <script src="./js/d3.min.js"></script>
+  <script src="./js/chart.min.js"></script>
+  <script src="./js/models.js"></script>
+
+</body>
+
+</html>

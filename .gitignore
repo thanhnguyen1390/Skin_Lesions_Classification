@@ -105,3 +105,10 @@ venv.bak/
 
 # dataset
 data.zip
+models/resnet18_weight/model.pt
+models/alexnet/model.pt
+models/alexnet_weight/model.pt
+models/resnet18/model.pt
+
+#NPM Packages
+node_modules/
