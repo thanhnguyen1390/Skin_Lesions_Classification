@@ -222,9 +222,9 @@ def send_email(message):
     # Function to send notification email
     port = 587
     smtp_sever = 'smtp.gmail.com'
-    sender_email = 'thanht.nguyen1390@gmail.com'
-    receiver_email = 'thanht.nguyen1390@gmail.com'
-    password = 'lgdhmwpuwlhjykgc'
+    sender_email = '' #Sender email
+    receiver_email = '' #Receiver email
+    password = '' #Password
 
     context = ssl.create_default_context()
     with smtplib.SMTP(smtp_sever, port) as server:
