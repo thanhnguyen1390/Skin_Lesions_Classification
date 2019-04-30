@@ -32,6 +32,11 @@ Extract the zipped files, all csv files go to data directory and images go to da
 
 Make sure all neccessary packages are installed before running py codes.
 
+### Open front end locally
+
+Make sure python3 is installed. In command line, run python -m http.server to host the site on your local machine. The website will be accessible at localhost:8000/index.html
+
+
 
 
 
