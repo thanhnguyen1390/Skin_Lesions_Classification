@@ -334,7 +334,7 @@ Subject: Training completed
 Training ResNet18 model completed.
 """
 
-send_email(message)
+# send_email(message)
 
 
 # ##############################################################
@@ -373,7 +373,7 @@ Subject: Training completed
 Training ResNet18 with weight model completed.
 """
 
-send_email(message)
+# send_email(message)
 
 # ##############################################################
 # #                    ALEXNET                                 #
@@ -414,7 +414,7 @@ Subject: Training completed
 Training AlexNet model completed.
 """
 
-send_email(message)
+# send_email(message)
 
 # ##############################################################
 # #             ALEXNET WITH WEIGHT                            #
@@ -455,4 +455,4 @@ Subject: Training completed
 Training AlexNet with weight  model completed.
 """
 
-send_email(message)
+# send_email(message)
